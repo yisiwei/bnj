@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="#CFCFCF" />
+
+    <TextView
+        android:id="@+id/address_add"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/add_address"
+        android:textColor="#3e3e3e"
+        android:textSize="16sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="15dp"
+        android:background="#CFCFCF" />
+    
+    <!-- <LinearLayout
+        android:id="@+id/address_info"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consignee2"
+                android:textColor="#3e3e3e"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/address_consignee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#3e3e3e"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/address_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:textColor="#3e3e3e"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+             android:textSize="16sp"
+            android:text="@string/shipping_address"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CFCFCF" /> -->
+
+    <com.bangninjia.app.lib.swipmenu.SwipeMenuListView
+        android:id="@+id/address_listview"
+        android:layout_width="match_parent"
+        android:divider="#EFEFF4"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp" >
+        
+    </com.bangninjia.app.lib.swipmenu.SwipeMenuListView>
+    
+
+</LinearLayout>

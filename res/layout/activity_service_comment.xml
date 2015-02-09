@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/satisfaction_comment"
+        android:textColor="#3e3e3e"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <RadioGroup
+        android:id="@+id/comment_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/comment_very_satisfaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/very_satisfaction"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/comment_satisfaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/satisfaction"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/comment_dissatisfaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dissatisfaction"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/order_comment"
+        android:textColor="#3e3e3e"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="top"
+        android:hint="@string/comment_hint"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/comment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_bg_blue"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

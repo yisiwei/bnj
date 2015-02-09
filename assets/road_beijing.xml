@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roads>
+   	<area road="东城区">
+   		<road>内环到三环里</road>
+   	</area>
+   	<area road="西城区">
+   		<road>内环到二环里</road>
+   		<road>二环到三环</road>
+   	</area>
+   	<area road="崇文区">
+   		<road>内环到二环</road>
+   		<road>二环到三环</road>
+   	</area>
+   	<area road="宣武区">
+   		<road>内环到三环里</road>
+   	</area>
+   	<area road="朝阳区">
+   		<road>三环以内</road>
+   		<road>三环到四环之间</road>
+   		<road>四环到五环之间</road>
+   		<road>*五环到六环之间</road>
+   		<road>管庄</road>
+   		<road>北苑</road>
+   		<road>定福庄</road>
+   	</area>
+   	<area road="丰台区">
+   		<road>二环到三环</road>
+   		<road>三环到四环之间</road>
+   		<road>四环到五环之间</road>
+   		<road>*五环到六环之间</road>
+   		<road>*六环之外</road>
+   	</area>
+   	<area road="石景山区">
+   	    <road>四环到五环内</road>
+   		<road>*石景山城区</road>
+   		<road>*八大处科技园区</road>
+   	</area>
+   	<area road="海淀区">
+   	    <road>三环以内</road>
+   		<road>三环到四环之间</road>
+   		<road>四环到五环之间</road>
+   		<road>*五环到六环之间</road>
+   		<road>*六环之外</road>
+   		<road>*西二旗</road>
+   		<road>*西三旗</road>
+   	</area>
+   	<area road="门头沟区">
+   	    <road>*城区以内</road>
+   		<road>*城区以外</road>
+   	</area>
+   	<area road="房山区">
+   	    <road>*城区以内</road>
+   		<road>*城区以外</road>
+   	</area>
+   	<area road="通州区">
+   	    <road>*漷县镇</road>
+   		<road>*北苑街道</road>
+   		<road>*梨园地区</road>
+   		<road>*潞城镇</road>
+   		<road>*马驹桥镇</road>
+   		<road>*宋庄镇</road>
+   		<road>*台湖镇</road>
+   		<road>*西集镇</road>
+   		<road>*新华街道</road>
+   		<road>*永乐店镇</road>
+   		<road>*永顺地区</road>
+   		<road>*于家务回族乡</road>
+   		<road>*玉桥街道</road>
+   		<road>*张家湾镇</road>
+   		<road>*中仓街道</road>
+   	</area>
+   	<area road="顺义区">
+   	    <road>*北石槽镇</road>
+   		<road>*北务镇</road>
+   		<road>*北小营镇</road>
+   		<road>*大孙各庄镇</road>
+   		<road>*高丽营镇</road>
+   		<road>*光明街道</road>
+   		<road>*后沙峪地区</road>
+   		<road>*空港街道</road>
+   		<road>*李桥镇</road>
+   		<road>*李遂镇</road>
+   		<road>*龙湾屯镇</road>
+   		<road>*马坡地区</road>
+   		<road>*木林镇</road>
+   		<road>*南彩镇</road>
+   		<road>*南法信地区</road>
+   		<road>*牛栏山地区</road>
+   		<road>*仁和地区</road>
+   		<road>*胜利街道</road>
+   		<road>*石园街道</road>
+   		<road>*双丰街道</road>
+   		<road>*天竺地区</road>
+   		<road>*旺泉街道</road>
+   		<road>*杨镇地区</road>
+   		<road>*张镇</road>
+   		<road>*赵全营镇</road>
+   	</area>
+   	<area road="昌平区">
+   	    <road>*六环以内</road>
+   		<road>城区</road>
+   		<road>城区之外</road>
+   	</area>
+   	<area road="大兴区">
+   	    <road>四环到五环之间</road>
+   		<road>*五环到六环之间</road>
+   		<road>*六环以外</road>
+   		<road>*亦庄经济开发区</road>
+   	</area>
+   	<area road="怀柔区">
+   	    <road>*城区以内</road>
+   		<road>*城区以外</road>
+   	</area>
+   	<area road="平谷区">
+   	    <road>*城区以内</road>
+   		<road>*城区以外</road>
+   	</area>
+   	<area road="密云县">
+   	    <road>*城区以内</road>
+   		<road>*城区以外</road>
+   	</area>
+   	<area road="延庆县">
+   	    <road>*八达岭镇</road>
+   		<road>*大榆树镇</road>
+   		<road>*大庄科乡</road>
+   		<road>*井庄镇</road>
+   		<road>*旧县镇</road>
+   		<road>*康庄镇</road>
+   		<road>*刘斌堡乡</road>
+   		<road>*千家店镇</road>
+   		<road>*沈家营镇</road>
+   		<road>*四海镇</road>
+   		<road>*香营乡</road>
+   		<road>*延庆镇</road>
+   		<road>*永宁镇</road>
+   		<road>*张山营镇</road>
+   		<road>*珍珠泉乡</road>
+   	</area>
+   	<area road="延庆镇">
+   	</area>
+</roads>

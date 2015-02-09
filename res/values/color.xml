@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<color name="tab_color_on">#007be3</color>
+    <color name="tab_color">#808080</color>
+	
+    <color name="title_color">#007be3</color>
+    <color name="color_666666">#666666</color>
+    
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="dialog_tiltle_blue">#2277BB</color>
+    
+    <!-- 暗灰色 -->
+	<color name="dimgrey">#696969</color>
+	<!-- 灰色 -->
+	<color name="gray">#808080</color>
+	
+	<!-- 线条颜色 -->
+	<color name="line">#cfcfcf</color>
+	
+	<!-- 立即预约按钮颜色   -->
+	<color name="color_btn_1">#FF6701</color>
+	
+	
+	<!-- 文字颜色  -->
+	<color name="color_222">#222222</color>
+	<color name="color_999">#999999</color>
+	
+	<!-- 背景颜色 -->
+	<color name="color_bg">#EFEFF4</color>
+	<color name="color_fff">#FFFFFF</color>
+	<color name="color_bcbcbc">#BCBCBC</color><!-- 灰色 -->
+	
+</resources>

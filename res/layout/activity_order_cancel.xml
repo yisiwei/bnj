@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/order_cancel_text"
+        android:textColor="#3e3e3e"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/order_cancel_reason_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/order_cancel_reason1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_1"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/order_cancel_reason2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_2"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/order_cancel_reason3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_3"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/order_cancel_reason4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_4"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/order_cancel_reason5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_5"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/reason_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_border_blue"
+        android:gravity="top"
+        android:hint="@string/reason_text"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/order_cancel_hint"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+    
+    <Button
+        android:id="@+id/order_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_bg_blue"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

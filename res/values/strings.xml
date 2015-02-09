@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">邦您家</string>
+
+    <!-- 主页 -->
+    <string name="home">主页</string>
+    <string name="order">订单</string>
+    <string name="account">我的</string>
+    <string name="reservation">预约</string>
+    <string name="more">更多</string>
+    <string name="reload">重新加载</string>
+    <string name="press_again_exit">再按一次推出程序</string>
+    <string name="wall_update">墙面更新</string>
+    <string name="floor_update">地板更新</string>
+    <string name="wallpaper_update">壁纸更新</string>
+    <string name="expect">敬请期待</string>
+    <string name="houseInfo">房屋信息</string>
+    <string name="select_painting">选择涂料</string>
+    <string name="select_color">选择颜色</string>
+    <string name="select_floor">选择地板</string>
+    <string name="select_skirting_board">选择踢脚线</string>
+    <string name="select_wallpaper">选择壁纸</string>
+    <string name="brush_wall">刷墙面</string>
+    <string name="paste_wallpaper">贴壁纸</string>
+    <string name="pave_floor">铺地板</string>
+    
+
+    <!-- 房屋信息 -->
+    <string name="price">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;价：</string>
+    <string name="currency">￥</string>
+    <string name="money">0.00</string>
+    <string name="unit">/平方米</string>
+    <string name="square_meter">平方米</string>
+    <string name="service_area">服务面积：</string>
+    <string name="skirting_board_length">踢脚线长度：</string>
+    <string name="meter">米</string>
+    <string name="floor_info">楼层信息：</string>
+    <string name="current_info">现状信息：</string>
+    <string name="service_type">服务类型：</string>
+    <string name="cracking">开裂</string>
+    <string name="molt">蜕皮</string>
+    <string name="obsolescence">陈旧</string>
+    <string name="mildew">霉变</string>
+    <string name="paint">涂刷乳胶漆</string>
+    <string name="update_paint">更新乳胶漆</string>
+    <string name="rough_paint">毛坯房涂刷乳胶漆</string>
+    <string name="install_floor">安装地板</string>
+    <string name="update_floor">更新地板</string>
+    <string name="rough_install_floor">毛坯房安装地板</string>
+    <string name="install_wallpaper">铺装壁纸</string>
+    <string name="update_wallpaper">更新壁纸</string>
+    <string name="rough_install_wallpaper">毛坯房铺装壁纸</string>
+
+    <!-- 选择颜色 -->
+    <string name="total_color">共找到%1$d种颜色</string>
+    <string name="red">红色</string>
+    <string name="orange">橙色</string>
+    <string name="yellow">黄色</string>
+    <string name="green">绿色</string>
+    <string name="blue">蓝色</string>
+    <string name="purple">紫色</string>
+    <string name="neutral">中性色</string>
+    <string name="lightwhite">浅白</string>
+    <string name="no_color">所选商品暂无改颜色分类</string>
+
+    <!-- 确认订单 -->
+    <string name="confirm_order">确认订单</string>
+    <string name="add_address">+添加地址信息</string>
+    <string name="consignee">收货人：</string>
+    <string name="shipping_address">收货地址：%1$s</string>
+    <string name="service_info">服务信息</string>
+    <string name="house_info">房屋信息：</string>
+    <string name="painting_info">涂料信息：</string>
+    <string name="color_info">颜色信息：</string>
+    <string name="appointment_time">预约时间</string>
+    <string name="appointment_time2">预约时间：</string>
+    <string name="work_time">施工时间：</string>
+    <string name="no_invoice">不开发票</string>
+    <string name="invoice_info">发票信息</string>
+    <string name="payment_mode">支付方式</string>
+    <string name="total_price">总金额：</string>
+    <string name="price_detail">费用明细</string>
+    <string name="price_money">(单价：￥0.00/平方米)</string>
+    <string name="price_hint">提示：</string>
+    <string name="coupon">优惠码</string>
+    <string name="use_coupon">使用优惠码</string>
+    <string name="price_type1">主材费：</string>
+    <string name="price_type2">人工费：</string>
+    <string name="price_type3">辅材费：</string>
+    <string name="price_type4">搬运费：</string>
+    <string name="price_type5">运输费：</string>
+    <string name="price_type6">踢脚线费：</string>
+    <string name="price_type7">壁纸胶费：</string>
+    <string name="price_type8">拆除费：</string>
+    <string name="price_type9">测量费：</string>
+    <string name="price_type10">折扣金额：</string>
+    <string name="price_demo">￥0.00</string>
+    <string name="amount_payable">应付金额：</string>
+    <string name="go_payment">去付款</string>
+
+    <!-- 我的 -->
+    <string name="my_account">账号:</string>
+    <string name="no_sumbit_order_count">您有%1$d个未提交订单</string>
+    <string name="my_order">我的订单</string>
+    <string name="service_comment">服务评价</string>
+    <string name="service_address">服务地址</string>
+    <string name="update_password">修改密码</string>
+    <string name="more_setting">更多设置</string>
+
+    <!-- 登录 注册 -->
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="username_hint">请输入账号</string>
+    <string name="pwd_hint">请输入密码</string>
+    <string name="confirm_pwd_hint">请确认密码</string>
+    <string name="code_hint">请输入验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="read_and_agree">我已阅读并同意</string>
+    <string name="bnj_user_agreement">邦您家用户协议</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="user">我是用户</string>
+    <string name="supplier">我是供应商</string>
+    <string name="workers">我是作业人员</string>
+
+    <!-- 修改密码 -->
+    <string name="old_pwd">请输入旧密码</string>
+    <string name="new_pwd">请输入新密码</string>
+    <string name="confirm_new_pwd">请确认新密码</string>
+    <string name="check_pwd">密码由8&#8211;16位数字、字母或符号至少两种组合</string>
+
+    <!-- 忘记密码 -->
+    <string name="input_mobile">请输入您的手机号码：</string>
+    <string name="code_demo">RSDT</string>
+    <string name="next">下一步</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="reset">重置</string>
+    <string name="reset_pwd_success">密码重置成功</string>
+    <string name="back_login">返回登录</string>
+
+    <!-- 发票信息 -->
+    <string name="save">保存</string>
+    <string name="invoice_type">发票类型</string>
+    <string name="plain_invoice">普通发票</string>
+    <string name="invoice_title">发票抬头</string>
+    <string name="invoice_person">个人</string>
+    <string name="invoice_unit">单位</string>
+    <string name="unit_name">单位名称</string>
+    <string name="invoice_content">发票内容</string>
+    <string name="details">明细</string>
+    <string name="consumable">耗材</string>
+    <string name="office">办公</string>
+    <string name="service_charge">服务费</string>
+
+    <!-- 订单 -->
+    <string name="no_order">您还没有相关订单</string>
+    <string name="order_number">订单编号：</string>
+    <string name="date_demo">2014&#8211;12&#8211;28</string>
+    <string name="order_tracking">订单跟踪</string>
+    <string name="order_payment">付款</string>
+    <string name="order_update">修改</string>
+    <string name="order_comment">评价</string>
+    <string name="order_confirm">确认</string>
+    <string name="order_look">查看</string>
+    <string name="order_delete">删除</string>
+    <string name="order_status">订单状态：</string>
+    <string name="name">姓名：</string>
+    <string name="detail_address">详细地址：</string>
+    <string name="material_info">材料信息</string>
+    <string name="material_brand">主材品牌：</string>
+    <string name="material_model">主材型号：</string>
+    <string name="material_type">主材材质：</string>
+    <string name="material_address">主材产地：</string>
+    <string name="worker_info">作业人员信息</string>
+    <string name="worker_number">作业人员编号：</string>
+    <string name="worker_name">作业人员姓名：</string>
+    <string name="worker_phone">作业人员联系方式：</string>
+    <string name="worker_address">作业人员服务区域：</string>
+    <string name="supplier_info">供应商信息</string>
+    <string name="supplier_name">供应商姓名：</string>
+    <string name="supplier_phone">供应商联系方式：</string>
+    <string name="supplier_address">供应商地址：</string>
+    <string name="service_price">服务费用</string>
+    <string name="service_price_1">主材费用：</string>
+    <string name="service_price_2">人工费用：</string>
+    <string name="service_price_3">辅材费用：</string>
+    <string name="service_price_4">搬运费用：</string>
+    <string name="service_price_5">运输费用：</string>
+    <string name="service_price_6">踢脚线费用：</string>
+    <string name="service_price_7">壁纸胶费用：</string>
+    <string name="service_price_8">拆除费用：</string>
+    <string name="service_price_9">测量费用：</string>
+    <string name="service_price_10">折扣金额：</string>
+    <string name="service_total_price">总计费用：</string>
+    <string name="order_cancel_text">请选择一个理由，以便为您提供更优质的服务！</string>
+    <string name="reason_1">价格昂贵</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="reason_2">现在不想更新</string>
+    <string name="reason_3">无法支付订单</string>
+    <string name="reason_4">服务地址有误</string>
+    <string name="reason_5">其他原因</string>
+    <string name="reason_text">请在此输入理由</string>
+    <string name="order_cancel_hint">温馨提示：订单取消后将无法恢复，此订单的金额将返回到您的支付宝账号</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_delete_check">确定要删除此订单吗？</string>
+    <string name="cancel_progress">取消进度</string>
+    <string name="cancel_order_detail">取消订单详细信息</string>
+    <string name="pay_detail">支付明细：</string>
+    <string name="apply_reason">申请原因：</string>
+    <string name="contacts">联&#160;&#160;系&#160;&#160;人：</string>
+    <string name="contact_phone">联系电话：</string>
+    <string name="update_order">修改订单</string>
+    <string name="pay_result">支付结果</string>
+    <string name="pay_success">订单支付成功</string>
+    <string name="chooce_service">继续选择服务</string>
+    <string name="view_order">查看订单</string>
+
+    <!-- 敬请期待 -->
+    <string name="expect_title">您最期待的功能：</string>
+    <string name="expect_1">墙面修补</string>
+    <string name="expect_2">屋顶修补</string>
+    <string name="expect_3">地面修补</string>
+    <string name="expect_4">室内保洁</string>
+    <string name="expect_5">绿植租售</string>
+    <string name="expect_6">房源信息</string>
+    <string name="expect_hint">告诉“邦您家”您的宝贵建议，我们会努力改进！</string>
+    <string name="submit">提交</string>
+
+    <!-- 更多 -->
+    <string name="contact_us">联系我们</string>
+    <string name="version_upgrade">版本升级</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_hint">请输入您的意见</string>
+    <string name="about_us">关于我们</string>
+    <string name="consulting_hotline">咨询热线：</string>
+    <string name="phone">400&#8211;650&#8211;6129</string>
+    <string name="cancel">取消</string>
+    <string name="call">呼叫</string>
+    <string name="confirm">确定</string>
+    <string name="old_version">当前为最新版本</string>
+    <string name="new_version">检测到新版本</string>
+    <string name="update_now">立即更新</string>
+    <string name="exit">退出登录</string>
+
+    <!-- 用户协议 -->
+    <string name="user_agreement_content">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;邦您家在此特别提醒用户认真阅读本《用户协议》（下称《协议》）中各个条款包括免除或限制邦您家责任的免责条款及对用户的权利限制。用户需认真审阅并选择是否接受本《协议》（未成年人应在法定监护人陪同下审阅）。用户的使用行为将视为对本协议的接受，并同意接受本协议各项条款的约束。</string>
+    <string name="agreement_title_1">一、邦您家服务条款的确认和接纳</string>
+    <string name="agreement_content_1_1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;邦您家（以下简称本站）的各项电子服务所有权和运作权归北京邦您家投资管理有限公司。本站提供的服务将完全按照其发布的服务条款和操作规则严格执行。用户必须完全同意所有服务条款并完成注册程序，才能成为本站的正式用户。</string>
+    <string name="agreement_content_1_2">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;用户确认：本协议条款是处理双方权利义务的当然约定依据，除非违反国家强制性法律，否则始终有效。在下订单的同时，用户也同时承认了其拥有购买该产品的权利能力和行为能力，并且将对在订单中提供的所有信息的真实性负责。</string>
+    <string name="agreement_title_2">二、服务条款的修改</string>
+    <string name="agreement_content_2">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;本站将可能不定期的修改本用户协议的有关条款，一旦条款及服务内容产生变动，本站将会在重要页面上提示修改内容。修改后的服务条款自在页面上公布之时起生效，成为本协议之一部分。如果不同意本站对条款内容所做的修改，用户可以主动取消获取得网络服务。本站保留随时修改或中断服务而不需告知用户的权利。本站行使修改或中断服务的权利，不需对用户或第三方负责。</string>
+    <string name="agreement_title_3">三、用户的账户、密码及安全性</string>
+    <string name="agreement_content_3">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;用户一旦注册成功，成为本站的合法用户，将得到一个密码和用户名。用户需维护账户和密码之安全。同时，由于邦您家无法对非法或未经用户授权使用用户账号及密码之行为进行甄别，用户需对任何利用专属该用户之账号和密码项下所有行为和事件负全责，邦您家不承担任何责任。但用户若发现任何非法使用用户账户或存在安全漏洞的情况，应毫不迟疑地立即通告邦您家，邦您家将尽最大努力协助用户阻止损害结果发生。邦您家账号使用权仅属于初始注册人，禁止赠与、借用、租用、转让或售卖。如果邦您家发现使用者并非账号初始注册人，邦您家有权在未经通知的情况下回收该账号而无需向该账号使用人承担法律责任。邦您家禁止用户私下有偿或无偿转让账号，以免因账号问题产生纠纷，用户应当自行承担因违反此要求而遭致的任何损失，同时邦您家保留追究上述行为人法律责任的权利。</string>
+    <string name="agreement_title_4">四、保障用户</string>
+    <string name="agreement_content_4">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;同意保障和维护本站全体成员的利益，负责支付由用户使用超出业务范围引起的律师费用，违反服务条款的损害补偿费用等。</string>
+    <string name="agreement_title_5">五、结束服务</string>
+    <string name="agreement_content_5">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;用户或本站可随时根据实际情况中断一项或多项网络服务。本站不需对任何个人或第三方负责而随时中断服务。用户对后来的条款修改有异议，或对本站的服务不满，可以行使如下权利：停止使用本站的网络服务。通知本站停止对该用户的服务。结束用户服务后，用户使用网络服务的权利马上中止。从那时起，用户没有权利要求本站，本站也没有义务传送任何未处理的信息或提供未完成的服务给用户或第三方。</string>
+    <string name="agreement_title_6">六、法律管辖和适用</string>
+    <string name="agreement_content_6_1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;本协议的订立、执行和解释及争议的解决均应适用中国法律。</string>
+    <string name="agreement_content_6_2">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;如发生本站服务条款与中国法律相抵触时，则这些条款将完全按法律规定重新解释，而其他合法条款则依旧保持对用户产生法律效力和影响。</string>
+    <string name="agreement_content_6_3">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;本协议的规定是可分割的，如本协议任何规定被裁定为无效或不可执行，该规定可被删除而其余条款应予以执行。如双方就本协议内容或其执行发生任何争议，双方应尽力友好协商解决；协商不成时，任何一方均可向本站所在地的人民法院提起诉讼。</string>
+
+    <!-- 关于我们 -->
+    <string name="about_title">企业文化</string>
+    <string name="about_content_1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;邦您家提供室内环境碎片化服务需求整体解决方案，此信息交互平台是O2O电子商务模式；邦您家创建标准化服务流程体系实现平台信息同工作流程之间、线上和线下之间、客户与作业人员之间的实时信息沟通交互，以满足客户需求室内环境碎片化之服务。</string>
+    <string name="about_content_2">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;“邦您家”秉承以人为本的服务原则,采用最简单的操作指令，实现标准化流程服务。您的需求只要通过邦您家信息平台或手机终端的模块化服务，即可轻松完成需求服务，并由邦您家进行系统的质量和服务跟踪。</string>
+    <string name="about_content_3">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;企业理念：邦您家做小事到极致。</string>
+    <string name="about_content_4">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;企业使命：邦您家服务伴终生永续提供室内环境服务。</string>
+
+    <!-- 服务评价 -->
+    <string name="satisfaction_comment">满意度评价</string>
+    <string name="comment_hint">请输入评语</string>
+    <string name="very_satisfaction">非常满意</string>
+    <string name="satisfaction">满意</string>
+    <string name="dissatisfaction">不满意</string>
+    <string name="order_no">订单号：</string>
+    <string name="service_items">服务项目：</string>
+    <string name="comment_satisfaction">满&#160;&#160;意&#160;&#160;度：</string>
+    <string name="comment_content">评价内容：</string>
+    <string name="no_comment">还没有服务评价，赶快去评价吧！</string>
+    <string name="go_comment">去评价</string>
+
+    <!-- 服务地址 -->
+    <string name="address_manage">地址管理</string>
+    <string name="edit">编辑</string>
+    <string name="consignee2">收&#160;&#160;货&#160;&#160;人：</string>
+    <string name="mobile_phone">手机：</string>
+    <string name="province_city_district">省、市、区：</string>
+    <string name="ring_town">环/镇：</string>
+    <string name="new_address">新建地址</string>
+    <string name="eidt_address">编辑地址</string>
+    <string name="province">省</string>
+    <string name="city">市</string>
+    <string name="area">区</string>
+    <string name="select_date">选择日期</string>
+    <string name="select_time">选择时间</string>
+
+    <!-- 案例分享 -->
+    <string name="case_share">案例分享</string>
+    <string name="service_wall">墙面更新服务</string>
+    <string name="service_wallpaper">壁纸更新服务</string>
+    <string name="service_floor">地板更新服务</string>
+
+    <!-- 知识学堂 -->
+    <string name="school">知识学堂</string>
+    <string name="all">全部</string>
+    <string name="wall">墙面</string>
+    <string name="wallpaper">壁纸</string>
+    <string name="floor">地板</string>
+    <string name="load_more">加载更多</string>
+    
+    <!-- 快速预约 -->
+    <string name="now_reservation">快速预约</string>
+    <string name="name_hint">请输入姓名</string>
+    <string name="reservation_btn">立即预约</string>
+    <string name="reservation_service_type">服务项目</string>
+    
+    <!-- 专题 -->
+    <string name="special">专题</string>
+
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_color"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/home_call_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/phone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/home_frame"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp" >
+
+        <com.bangninjia.app.view.AutoScrollViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+<!--         <com.bangninjia.app.view.MyGallery
+            android:id="@+id/myGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" /> -->
+
+        <LinearLayout
+            android:id="@+id/home_navig_dots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/bao" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/color_fff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/index_home_wall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/wall"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/brush_wall" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/index_home_wallpaper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/wallpaper"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/paste_wallpaper" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/index_home_floor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/floor"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/pave_floor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/color_fff"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/home_case_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/case_share"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/case_share" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/home_school"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/school"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/school" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:background="@color/line" />
+
+    <!-- <ImageView
+        android:id="@+id/index_home_expect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/index4"
+        android:visibility="gone" /> -->
+
+</LinearLayout>

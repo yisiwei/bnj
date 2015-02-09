@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/order_order_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/order_order_icon" />
+
+                <TextView
+                    android:id="@+id/order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_order_icon"
+                    android:text="@string/order_number"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_orderid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/order_number"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/order_number"
+                    android:layout_below="@id/order_number"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/order_status"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/order_status"
+                    android:layout_toRightOf="@id/order_status"
+                    android:text=""
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/order_address_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/order_address_icon" />
+
+                <TextView
+                    android:id="@+id/consignee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_address_icon"
+                    android:text="@string/consignee"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_consignee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/consignee"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/date_demo"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/consignee"
+                    android:layout_below="@id/consignee"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/detail_address"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/detail_address"
+                    android:layout_toRightOf="@id/detail_address"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- 服务信息 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/order_service_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/order_service_icon" />
+
+                <TextView
+                    android:id="@+id/service_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_service_icon"
+                    android:text="@string/service_info"
+                    android:textColor="#3E3E3E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/service_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_info"
+                    android:layout_below="@id/service_info"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_items"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_service_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_items"
+                    android:layout_toRightOf="@id/service_items"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/service_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_items"
+                    android:layout_below="@id/service_items"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_type"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_service_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_type"
+                    android:layout_toRightOf="@id/service_type"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/house_info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_type"
+                    android:layout_below="@id/service_type"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/house_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/house_info"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/order_detail_house_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/appointment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/house_info_layout"
+                    android:layout_below="@id/house_info_layout"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/appointment_time2"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_appointment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/appointment_time"
+                    android:layout_toRightOf="@id/appointment_time"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+                
+                <TextView
+                    android:id="@+id/work_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/appointment_time"
+                    android:layout_below="@id/appointment_time"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/work_time"
+                    android:textColor="#666666"
+                    android:visibility="gone"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_work_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/work_time"
+                    android:layout_toRightOf="@id/work_time"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- 材料信息 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/order_material_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/order_material_icon" />
+
+                <TextView
+                    android:id="@+id/material_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_material_icon"
+                    android:text="@string/material_info"
+                    android:textColor="#3e3e3e"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/material_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/material_info"
+                    android:layout_below="@id/material_info"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/material_brand"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_material_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/material_brand"
+                    android:layout_toRightOf="@id/material_brand"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/material_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/material_brand"
+                    android:layout_below="@id/material_brand"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/material_model"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_material_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/material_model"
+                    android:layout_toRightOf="@id/material_model"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/material_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/material_model"
+                    android:layout_below="@id/material_model"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/material_type"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_material_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/material_type"
+                    android:layout_toRightOf="@id/material_type"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/material_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/material_type"
+                    android:layout_below="@id/material_type"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/material_address"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_material_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/material_address"
+                    android:layout_toRightOf="@id/material_address"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- 作业人员信息 -->
+
+            <RelativeLayout
+                android:id="@+id/order_detail_worker_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/order_worker_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/order_worker_icon" />
+
+                <TextView
+                    android:id="@+id/worker_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_worker_icon"
+                    android:text="@string/worker_info"
+                    android:textColor="#3e3e3e"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/worker_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/worker_info"
+                    android:layout_below="@id/worker_info"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/worker_number"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_worker_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/worker_number"
+                    android:layout_toRightOf="@id/worker_number"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/worker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/worker_number"
+                    android:layout_below="@id/worker_number"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/worker_name"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_worker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/worker_name"
+                    android:layout_toRightOf="@id/worker_name"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/worker_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/worker_name"
+                    android:layout_below="@id/worker_name"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/worker_phone"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_worker_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/worker_phone"
+                    android:layout_toRightOf="@id/worker_phone"
+                    android:text=""
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/worker_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/worker_phone"
+                    android:layout_below="@id/worker_phone"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/worker_address"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_worker_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/worker_address"
+                    android:layout_toRightOf="@id/worker_address"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            
+            <!-- 供应商信息 -->
+
+            <RelativeLayout
+                android:id="@+id/order_detail_supplier_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:visibility="gone"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/order_supplier_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/order_worker_icon" />
+
+                <TextView
+                    android:id="@+id/supplier_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_supplier_icon"
+                    android:text="@string/supplier_info"
+                    android:textColor="#3e3e3e"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/supplier_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/supplier_info"
+                    android:layout_below="@id/supplier_info"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/supplier_name"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_supplier_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/supplier_name"
+                    android:layout_toRightOf="@id/supplier_name"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/supplier_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/supplier_name"
+                    android:layout_below="@id/supplier_name"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/supplier_phone"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_supplier_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/supplier_phone"
+                    android:layout_toRightOf="@id/supplier_phone"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/supplier_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/supplier_phone"
+                    android:layout_below="@id/supplier_phone"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/supplier_address"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_supplier_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/supplier_address"
+                    android:layout_toRightOf="@id/supplier_address"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- 服务费用 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/order_service_money_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/order_service_money_icon" />
+
+                <TextView
+                    android:id="@+id/service_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_service_money_icon"
+                    android:text="@string/service_price"
+                    android:textColor="#3e3e3e"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/service_price_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price"
+                    android:layout_below="@id/service_price"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_1"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_1"
+                    android:layout_toRightOf="@id/service_price_1"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/service_price_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_1"
+                    android:layout_below="@id/service_price_1"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_2"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_2"
+                    android:layout_toRightOf="@id/service_price_2"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/service_price_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_2"
+                    android:layout_below="@id/service_price_2"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_3"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_detail_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_3"
+                    android:layout_toRightOf="@id/service_price_3"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/service_price_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_3"
+                    android:layout_below="@id/service_price_3"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_4"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_detail_price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_4"
+                    android:layout_toRightOf="@id/service_price_4"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/service_price_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_4"
+                    android:layout_below="@id/service_price_4"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_5"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_detail_price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_5"
+                    android:layout_toRightOf="@id/service_price_5"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/service_price_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_5"
+                    android:layout_below="@id/service_price_5"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_6"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_detail_price6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_6"
+                    android:layout_toRightOf="@id/service_price_6"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/service_price_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_6"
+                    android:layout_below="@id/service_price_6"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_7"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_detail_price7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_7"
+                    android:layout_toRightOf="@id/service_price_7"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/service_price_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_7"
+                    android:layout_below="@id/service_price_7"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_8"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_detail_price8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_8"
+                    android:layout_toRightOf="@id/service_price_8"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+                
+                <TextView
+                    android:id="@+id/service_price_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_8"
+                    android:layout_below="@id/service_price_8"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_price_10"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_detail_price10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_price_10"
+                    android:layout_toRightOf="@id/service_price_10"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/service_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/service_price_10"
+                    android:layout_below="@id/service_price_10"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/service_total_price"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_total_pric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/service_total_price"
+                    android:layout_toRightOf="@id/service_total_price"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/order_cancel_btn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/order_button_bg"
+                    android:text="@string/cancel"
+                    android:textColor="#3a9be7"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/order_update_btn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/order_button_bg"
+                    android:text="@string/order_update"
+                    android:textColor="#3a9be7"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/order_payment_btn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/order_button_bg"
+                    android:text="@string/order_payment"
+                    android:textColor="#3a9be7"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/order_delete_btn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/order_button_bg"
+                    android:text="@string/order_delete"
+                    android:textColor="#3a9be7"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/order_comment_btn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/order_button_bg"
+                    android:text="@string/order_comment"
+                    android:textColor="#3a9be7"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/order_tracking_btn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/order_button_bg"
+                    android:text="@string/order_tracking"
+                    android:textColor="#3a9be7"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

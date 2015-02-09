@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<citys>
+    <city name="北京市">
+    	<area id="010101">东城区</area>
+    	<area id="010102">西城区</area>
+    	<area id="010103">崇文区</area>
+    	<area id="010104">宣武区</area>
+    	<area id="010105">朝阳区</area>
+    	<area id="010106">丰台区</area>
+    	<area id="010107">石景山区</area>
+    	<area id="010108">海淀区</area>
+    	<area id="010109">门头沟区</area>
+    	<area id="010110">房山区</area>
+    	<area id="010111">通州区</area>
+    	<area id="010112">顺义区</area>
+    	<area id="010113">昌平区</area>
+    	<area id="010114">大兴区</area>
+    	<area id="010115">怀柔区</area>
+    	<area id="010116">平谷区</area>
+    	<area id="010117">密云县</area>
+    	<area id="010118">延庆县</area>
+    	<area id="010119">延庆镇</area>
+    </city>
+</citys>

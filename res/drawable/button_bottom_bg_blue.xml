@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 四个角的弯曲程度 -->
+    <corners 
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp" />
+
+    <!-- 边框宽度及颜色 -->
+    <stroke
+        android:width="0dp"
+        android:color="#999999" />
+
+    <!-- 框内颜色 -->
+    <solid android:color="#3a9be7" />
+
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+
+</shape>
