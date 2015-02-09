@@ -86,6 +86,9 @@ public class FloorActivity extends Activity implements OnClickListener,
 		initView();
 	}
 
+	/**
+	 * 初始化View
+	 */
 	private void initView() {
 		// title
 		mTitleLeftBtn = (ImageButton) this.findViewById(R.id.title_left_btn);
